@@ -1,0 +1,13 @@
+package testNG1;
+
+import org.testng.annotations.Test;
+
+public class XmlReadingEg {
+
+	String br;
+	@Test
+	public void tt(){
+		
+		if()
+	}
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="99513" started-at="2023-08-23T01:41:09Z" finished-at="2023-08-23T01:42:49Z">
+    <groups>
+    </groups>
+    <test name="chrome" duration-ms="93397" started-at="2023-08-23T01:41:09Z" finished-at="2023-08-23T01:42:43Z">
+      <class name="grid.GridEg">
+        <test-method status="PASS" signature="gg(java.lang.String, java.lang.String)[pri:0, instance:grid.GridEg@1a968a59]" name="gg" duration-ms="93242" started-at="2023-08-23T07:11:09Z" finished-at="2023-08-23T07:12:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gg -->
+      </class> <!-- grid.GridEg -->
+    </test> <!-- chrome -->
+    <test name="firefox" duration-ms="98845" started-at="2023-08-23T01:41:09Z" finished-at="2023-08-23T01:42:48Z">
+      <class name="grid.GridEg">
+        <test-method status="PASS" signature="gg(java.lang.String, java.lang.String)[pri:0, instance:grid.GridEg@26653222]" name="gg" duration-ms="98716" started-at="2023-08-23T07:11:09Z" finished-at="2023-08-23T07:12:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gg -->
+      </class> <!-- grid.GridEg -->
+    </test> <!-- firefox -->
+    <test name="edge" duration-ms="99513" started-at="2023-08-23T01:41:09Z" finished-at="2023-08-23T01:42:49Z">
+      <class name="grid.GridEg">
+        <test-method status="PASS" signature="gg(java.lang.String, java.lang.String)[pri:0, instance:grid.GridEg@4dfa3a9d]" name="gg" duration-ms="99378" started-at="2023-08-23T07:11:09Z" finished-at="2023-08-23T07:12:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gg -->
+      </class> <!-- grid.GridEg -->
+    </test> <!-- edge -->
+  </suite> <!-- Suite -->
+</testng-results>

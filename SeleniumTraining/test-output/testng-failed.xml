@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="br" value="Chrome"/>
+    <parameter name="url" value="https://youtube.com"/>
+    <classes>
+      <class name="testNG1.XmlReadingEg">
+        <methods>
+          <include name="tt" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG1.XmlReadingEg -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

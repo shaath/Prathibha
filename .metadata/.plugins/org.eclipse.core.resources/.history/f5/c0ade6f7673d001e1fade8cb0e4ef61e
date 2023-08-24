@@ -1,0 +1,18 @@
+package day1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class ChromeLaunchEg {
+
+	public static void main(String[] args) {
+//		System.setProperty("webdriver.chrome.driver", "D:\\PrathibhaRecordings\\Jars\\chromedriver-win64\\chromedriver.exe");
+		ChromeOptions op = new ChromeOptions();
+		op.setBinary("C:\\Users\\SharatChandra\\Downloads\\chrome-win64/chrome.exe");
+		WebDriver driver = new ChromeDriver(op);
+		
+		driver.get("https://gmail.com");
+	}
+
+}

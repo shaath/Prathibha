@@ -1,0 +1,38 @@
+package testNG1;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeTest;
+
+import functionalDriven.GenericMethods;
+
+public class TestNGMaster extends GenericMethods {
+	public GenericMethods gm;
+	public String expval, actval;
+	
+	public FileInputStream fi;
+	Properties pr;
+	
+	public String br = "Firefox", url = "http://orangehrm.qedgetech.com";
+	public String u = "Admin", p = "Qedge123!@#";
+	
+	@BeforeTest
+	public void orgLaunch() throws IOException{
+		expval = "LOGIN";
+		gm = new GenericMethods();
+		
+		fi = new FileInputStream(System.getProperty("user.dir")+"\\src\\com\\SeleniumTraining\\properties\\OrgHRM.properties");
+		pr = new Properties();
+		pr.load(fi);
+		
+		gm.brLaunch(br);
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(360));
+		actval = driver.findElement(By.id(pr.getProperty("login"))).getAttribute("value");
+	}
+}

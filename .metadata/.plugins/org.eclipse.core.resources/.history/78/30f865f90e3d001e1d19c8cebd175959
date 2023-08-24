@@ -1,0 +1,21 @@
+package testNG1;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.testng.annotations.BeforeTest;
+
+import functionalDriven.GenericMethods;
+
+public class TestNGMaster {
+	public GenericMethods gm;
+	public String expval, actval;
+	
+	public FileInputStream fi;
+	Properties pr;
+	
+	@BeforeTest
+	public void orgLaunch(){
+		
+	}
+}
